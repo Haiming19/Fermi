@@ -1,0 +1,36 @@
+data:
+  evfile : events.list
+  scfile : SC.fits
+  ltcube : null
+
+binning:
+
+  roiwidth   : 10.0
+  binsz      : 0.1 
+  binsperdec : 8   
+
+selection:
+
+  emin    : 100
+  emax    : 300000
+  zmax    : 105
+  evclass : 128
+  evtype  : 3
+  tmin    : 239557417.
+  tmax    : 584949858. # 8 years
+  filter  : null
+  target  : 4FGL J0521.2+1637
+
+gtlike:
+
+  edisp : True
+  irfs : 'P8R3_SOURCE_V2'
+  edisp_disable : ['isodiff','galdiff']
+
+model:
+
+  src_radius  : null
+  src_roiwidth : 15.0
+  galdiff  : '/home/zhm/anaconda2/pkgs/fermitools-data-0.13-0/share/fermitools/refdata/fermi/galdiffuse/gll_iem_v07.fits'
+  isodiff  : 'iso_P8R3_SOURCE_V2_v1.txt'
+  catalogs : ['4FGL']
